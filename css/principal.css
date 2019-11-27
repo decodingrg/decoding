@@ -1,0 +1,203 @@
+/*rgba(242,145,0,1); Naranja Institucional*/
+/*rgba(0,158,227,1); Celeste insticucional*/
+/*rgba(87,87,87,1); Gris Institucional*/
+
+/* --------------------------- BARRA DE NAVEGACION --------------------------- */
+
+*
+	{
+		margin: 0;
+		padding: 0;
+		transition: 1s;
+	}
+
+nav
+	{
+		display: grid;
+		grid-template-columns: 100px 1fr;
+		height: 65px;	
+		/*box-shadow: 0px 0px 20px 6px rgba(51,51,51,0.05);*/
+		
+	}
+
+nav > i.fas.fa-bars
+	{
+		color: rgba(255,127,0,1);
+		font-size: 25pt;
+		cursor: pointer;
+		justify-self:end;
+		margin: auto 5vw;
+	}
+
+nav > section.logo
+	{
+		background-color: rgba(51,51,51,1);
+		display: grid;
+		align-items: center;
+		justify-items:center;
+		z-index: 1;
+	}
+
+nav > section.logo > img
+	{
+		width: 65px;
+	}
+
+.modal 
+	{
+		display: grid;	
+	  	position: absolute; /* Se mantiene en posicion fija */
+	  	left: 0;
+	  	top: 0;
+	  	width: 100%; /* Ocupa todo en ancho */
+	  	height: 0; /* Ocupa todo en alto */ /* Permite el scrool si es necesario. */
+	  	background-color: rgba(255,127,0,0.8); /* Black w/ opacity */
+	  	grid-template-rows: 108px 6fr;
+	  	overflow: hidden;
+	}
+
+.visible
+	{
+		height: 100vh;
+		
+	}
+
+.modal-contenido 
+	{
+		display: grid;
+		height: 100vh;
+		min-width: 350px;
+		margin: auto;
+		grid-template-rows: repeat(6, 15vh);
+		align-items: center;
+		justify-items:center;
+	}
+
+.modal-contenido > a
+	{
+		text-decoration: none;
+		color: white;
+		font-family: 'Prompt', sans-serif;
+		font-weight: 400;
+		font-size: 25pt;
+		/*Animacion subrayado*/
+		background-image: linear-gradient(currentColor, currentColor);
+    	background-position: 50% 100%;
+    	background-repeat: no-repeat;
+    	background-size: 0% 5px;
+	}
+
+.modal-contenido > a:hover, .modal-contenido > a:focus, .visited	
+	{
+		color:black;
+		background-size: 100% 5px;
+	}
+
+.modal-contenido > i
+	{
+		justify-self:end; 
+		text-align: right;
+		padding: 5vh 2.5vh;
+		color: white;
+		font-size: 25pt;
+		cursor: pointer;
+	}
+
+.modal-contenido > i:hover
+	{
+		color: black;
+	}
+
+
+/*-------------------- SECCIONES --------------------*/
+section#Hola
+	{
+		height: 90vh;
+	}
+
+section#Hola > article.logo	
+	{
+		max-width: 270px;
+		display: grid;
+		border-bottom: 5px solid rgba(255,127,0,1);
+		padding-top: 8vh ;
+	}
+
+section#Hola > article.logo > img
+	{
+		height: 40px;
+		justify-self: end;
+	}
+
+section#Que
+	{
+		height: 0;
+	}
+
+
+@media screen and (min-width: 600px)
+	{
+		/*-------------------- SECCIONES --------------------*/
+		section#Hola > article.logo	
+			{
+				max-width: 450px;
+			}
+
+		section#Hola > article.logo > img
+			{
+				height: 60px;
+
+			}
+
+@media screen and (min-width: 800px)
+	{
+		
+		/* --------------------------- BARRA DE NAVEGACION --------------------------- */
+		nav > i.fas.fa-bars
+			{
+				display: none;
+			}
+
+		nav > .modal
+			{
+				height: 65px;
+				position: relative;
+				background-color: rgba(255,255,255,0);
+			}
+
+		.modal-contenido > i
+			{
+				display: none;
+			}
+
+		.modal-contenido 
+			{
+				grid-template-rows: 1fr;
+				grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+				height: 65px;
+				margin: 0;
+			}
+
+		.modal-contenido > a
+			{
+				font-size:13px;
+				background-size: 0% 2px;
+				color:rgba(255,127,0,1);
+
+			}
+
+		.modal-contenido > a:hover, .modal-contenido > a:focus, .visited
+			{
+				color: rgba(255,127,0,1);
+				background-size: 100% 2px;
+			}
+
+		/*-------------------- SECCIONES --------------------*/
+		section#Hola > article.logo	
+			{
+				max-width: 600px;
+			}
+		section#Hola > article.logo > img
+			{
+				height: 80px;
+			}
