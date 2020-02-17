@@ -143,15 +143,21 @@ section#prin > img
 
 .fuera
 	{
-		line-height: 0;
-		overflow: hidden;
+		display: none;
+	}
+
+.fuera > h2
+	{
 		color: rgba(87,87,87,1);
+		font-size: 25px;
+		margin: auto;
 	}
 
 .dentro
 	{
 		line-height: 30px;
 		margin-bottom:15px;
+		overflow: visible;
 	}
 
 .contenedor
@@ -162,7 +168,14 @@ section#prin > img
 		box-shadow: 0px -10px 0 10px white;
 	}
 
-section#Hola, section#Que, section#Como, section#Proyectos, section#Contactanos, footer
+section#Hola, section#Que, section#Como, section#Proyectos, section#Contactanos
+	{
+		display: grid;
+		grid-template-columns:1fr;
+		min-height: 300px;
+	}
+
+footer
 	{
 		display: grid;
 		grid-template-columns:1fr;
@@ -181,6 +194,53 @@ section#Que > .contenedor, section#Proyectos > .contenedor
 section#Contactanos > .contenedor
 	{
 		background-color: rgba(87,87,87,1);
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 40px 1fr 1fr;
+		row-gap: 30px;
+	}
+
+section#Contactanos > .contenedor > h2
+	{
+		grid-column: span 2;
+		align-self: center;
+	}
+
+section#Contactanos > .contenedor > a
+	{
+		width: 115px;
+		height: 115px;
+		display: inline-block;
+		background-repeat: no-repeat;
+		align-self: center;
+		justify-self: center;
+	}
+
+a#face
+	{
+		background-image: url("../img/contac/face.png");
+	}
+
+a#mail
+	{
+		background-image: url("../img/contac/mail.png");
+	}
+
+a#insta
+	{
+		background-image: url("../img/contac/insta.png");
+	}
+
+a#git
+	{
+		background-image: url("../img/contac/git.png");
+	}	
+
+a#face:hover, a#mail:hover, a#insta:hover, a#git:hover
+	{
+		background-color: rgba(0,0,0,0.1);
+		border-radius: 10px;
+		box-shadow: 0 3px 6px 12px rgba(0,0,0,0.1);
 	}
 
 footer > .contenedor
@@ -213,6 +273,19 @@ footer > div > p
 		section#prin > img
 			{
 				max-width: 500px;
+			}
+
+		section#Contactanos > .contenedor
+			{
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+				grid-template-rows: 40px 1fr;
+			}
+
+		section#Contactanos > .contenedor > h2
+			{
+				grid-column: span 4;
+				align-self: center;
 			}
 	}
 
@@ -287,15 +360,26 @@ footer > div > p
 		
 		.fuera
 			{
-				line-height: 30px;
-				transform: rotate(-90deg);
-				justify-self: end;
-				align-self: center;
+				display: grid;
+				align-items: center; 
+			}
+
+		.fuera > h2
+			{
+				writing-mode: vertical-lr;
+    			transform: rotate(180deg);
 			}
 
 		.dentro
 			{
 				line-height:0;
 				overflow: hidden;
+			}
+
+		section#Contactanos > .contenedor
+			{
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+				grid-template-rows: 1fr;
 			}
 	}
