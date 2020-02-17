@@ -150,7 +150,6 @@ section#prin > img
 	{
 		color: rgba(87,87,87,1);
 		font-size: 25px;
-		margin: auto;
 	}
 
 .dentro
@@ -361,7 +360,8 @@ footer > div > p
 		.fuera
 			{
 				display: grid;
-				align-items: center; 
+				align-items: center;
+				justify-items: center; 
 			}
 
 		.fuera > h2
