@@ -8,11 +8,7 @@
 	{
 		margin: 0;
 		padding: 0;
-		-webkit-transition: all 1s ease;
-		-moz-transition: all 1s ease;
-		-ms-transition: all 1s ease;
-		-o-transition: all 1s ease;
-		transition: all 1s ease;
+		transition: all 1s;
 	}
 
 nav
@@ -281,13 +277,13 @@ footer > div > p
 		section#Contactanos > .contenedor
 			{
 				display: grid;
-				grid-template-columns: 1fr 1fr 1fr 1fr;
-				grid-template-rows: 40px 1fr;
+				grid-template-columns: repeat(2, 200px);
+				grid-template-rows: 40px 1fr 1fr;
 			}
 
 		section#Contactanos > .contenedor > h2
 			{
-				grid-column: span 4;
+				grid-column: span 2;
 				align-self: center;
 			}
 	}
@@ -383,7 +379,13 @@ footer > div > p
 		section#Contactanos > .contenedor
 			{
 				display: grid;
-				grid-template-columns: 1fr 1fr 1fr 1fr;
-				grid-template-rows: 1fr;
+				grid-template-columns: repeat(4, 150px);
+				grid-template-rows: 40px 1fr;
+			}
+
+		section#Contactanos > .contenedor > h2
+			{
+				grid-column: span 4;
+				align-self: center;
 			}
 	}
