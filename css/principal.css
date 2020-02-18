@@ -8,7 +8,11 @@
 	{
 		margin: 0;
 		padding: 0;
-		transition: 1s;
+		-webkit-transition: all 1s ease;
+		-moz-transition: all 1s ease;
+		-ms-transition: all 1s ease;
+		-o-transition: all 1s ease;
+		transition: all 1s ease;
 	}
 
 nav
@@ -237,9 +241,9 @@ a#git
 
 a#face:hover, a#mail:hover, a#insta:hover, a#git:hover
 	{
-		background-color: rgba(0,0,0,0.1);
+		background-color: rgba(0,0,0,0.3);
 		border-radius: 10px;
-		box-shadow: 0 3px 6px 12px rgba(0,0,0,0.1);
+		box-shadow: 0 3px 20px 12px rgba(0,0,0,0.3);
 	}
 
 footer > .contenedor
