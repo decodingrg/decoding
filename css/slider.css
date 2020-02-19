@@ -7,40 +7,67 @@
 
 div.slider
 	{
-		width: 100%;
+		max-width: 600px;
+		display: grid;
+		grid-template-columns: 50px 1fr 50px;
+		margin: auto;
 	}
 
 div.slide
 	{
-		display: grid;
-		max-height: 400px;
+		grid-column-start: 2;
+		grid-column-end: 3; 
+		max-height: 600px;
 		width: 100%;
-		grid-template-columns: 1fr repeat(4, 80px) 1fr;
-		grid-template-rows: repeat(4, 80px);
-		
+		display: grid;
+		grid-gap: 20px;
 	}
 
-div.image
+div.slide > h3
+	{
+
+	}
+
+div.slide > p
+	{
+		line-height: 20px;
+	}
+
+div.slide > img
+	{
+		width: 100%;
+	}
+	
+
+div.bot
+	{ 
+		grid-row-start: 1;
+		grid-row-end: 3;
+		display: grid;
+	}
+
+div.bot:hover
+	{
+		background-color: rgba(255,255,255,0.3);
+	}
+
+.izq
 	{
 		grid-column-start: 1;
-		grid-column-end: 7;
-		grid-row-start: 1;
-		grid-row-end: 4;
-		overflow: hidden;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
-		
+		grid-column-end: 2;
 	}
 
-.slider-2
+.der
 	{
-		margin-top: 10px;
+		grid-column-start: 3;
+		grid-column-end: 4;	
 	}
 
-.slider-2 > div.slide > div.image /*Esepcion para slider-2*/
+.izq > p, .der > p
 	{
-		grid-row-end: 5;
+		font-size: 40px;
+		align-self: center;
+		justify-self:center;
 	}
 
 div.pos
@@ -68,21 +95,6 @@ span.select
 		height: 15px;
 	}
 
-section.Color-magenta > span.select
-	{
-		background-color: #9E005D;
-	}
-
-section.Color-azul > span.select
-	{
-		background-color:#242F85;
-	}
-
-section.Color-naranja > span.select
-	{
-		background-color: #CC6435;
-	}
-
 @media screen and (min-width: 600px)
 	{
 		div.image > img
@@ -104,31 +116,5 @@ section.Color-naranja > span.select
 		div.image > img
 			{
 				max-width: 1600px;
-			}
-
-		div.logo
-			{
-				grid-column-start: 1;
-				grid-column-end: 2;
-				grid-row-start: 2;
-				grid-row-end: 4;
-				justify-self:center;
-			}
-
-		div.puntos
-			{
-				grid-column-start: 1;
-				grid-column-end: 2;
-				grid-row-start: 1;
-				grid-row-end: 5;
-				align-self: stretch;
-			}
-
-		div.puntos > p
-			{
-				float: none;
-				line-height: 50px;
-				font-size: 50px;
-				text-align: center;
 			}
 	}
