@@ -198,6 +198,8 @@ section#Como > .contenedor
 		row-gap: 30px;
 	}
 
+
+
 section#Como > .contenedor > h2
 	{
 		grid-column: span 3;
