@@ -103,6 +103,7 @@ span.select
 	{
 		width: 15px;
 		height: 15px;
+		background-color: rgba(87,87,87,0.8);
 	}
 
 @media screen and (min-width: 600px)
