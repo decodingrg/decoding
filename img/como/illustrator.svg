@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Capa_1"
+   data-name="Capa 1"
+   viewBox="0 0 115 115"
+   version="1.1"
+   sodipodi:docname="illustrator.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata19">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="711"
+     id="namedview17"
+     showgrid="false"
+     inkscape:zoom="2.0521739"
+     inkscape:cx="4.1419492"
+     inkscape:cy="57.5"
+     inkscape:window-x="0"
+     inkscape:window-y="36"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Capa_1" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:#87868a;}</style>
+  </defs>
+  <title
+     id="title6">vectores comolohacemos</title>
+  <path
+     class="cls-1"
+     d="M39.93,72.44H56.1l4.37,14.49H74.19L56.68,30.42H39.93L22.63,86.93H35.88ZM47.71,40h.16c.83,3.39,6.39,22.9,6.39,22.9H41.76S46.87,43.35,47.71,40Z"
+     id="path8"
+     style="fill:#ffffff" />
+  <rect
+     class="cls-1"
+     x="79.18"
+     y="45.95"
+     width="12.76"
+     height="40.98"
+     id="rect10"
+     style="fill:#ffffff" />
+  <path
+     class="cls-1"
+     d="M85.49,40.9c4.21,0,6.88-2.86,6.88-6.37a6.39,6.39,0,0,0-6.78-6.46c-4.12,0-6.82,2.77-6.73,6.46C78.77,38,81.47,40.9,85.49,40.9Z"
+     id="path12"
+     style="fill:#ffffff" />
+  <path
+     class="cls-1"
+     d="M0,0V115H115V0ZM107.89,107.89H7.11V7.11H107.89Z"
+     id="path14"
+     style="fill:#ffffff" />
+</svg>

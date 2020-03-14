@@ -194,8 +194,8 @@ section#Como > .contenedor
 	{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 40px 1fr 1fr;
-		row-gap: 30px;
+		grid-template-rows: 40px 50px 50px;
+		grid-row-gap: 30px;
 	}
 
 
@@ -208,45 +208,44 @@ section#Como > .contenedor > h2
 
 section#Como > .contenedor > span
 	{
-		border-radius: 12px;
-		background-color: rgba(0,0,0,0.2);
-		box-shadow: 3px 3px 0px 3px rgba(0,0,0,0.2);
+		opacity: 0.7;
 	}
 
 span#css
 	{
-		background-image: url("../img/contac/face.png");
+		background-image: url("../img/como/css3.svg");
 	}
 
 span#html
 	{
-		background-image: url("../img/contac/face.png");
+		background-image: url("../img/como/html5.svg");
 	}
 
 span#javascript
 	{
-		background-image: url("../img/contac/face.png");
+		background-image: url("../img/como/javascript.svg");
 	}
 
 span#python
 	{
-		background-image: url("../img/contac/face.png");
+		background-image: url("../img/como/python.svg");
 	}
 
 span#photoshop
 	{
-		background-image: url("../img/contac/face.png");
+		background-image: url("../img/como/photoshop.svg");
 	}
 
-span#ilustrator
+span#illustrator
 	{
-		background-image: url("../img/contac/face.png");
+		background-image: url("../img/como/illustrator.svg");
 	}
 
 section#Como > .contenedor > span:hover
 	{
-		background-color: rgba(0,0,0,0.3);
-		box-shadow: 0px 0px 0px 3px rgba(0,0,0,0.3);		
+		opacity: 1;
+		width: 60px;
+		height: 60px;
 	}
 
 section#Contactanos > .contenedor
@@ -255,7 +254,7 @@ section#Contactanos > .contenedor
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-rows: 40px 1fr;
-		row-gap: 30px;
+		grid-row-gap: 30px;
 	}
 
 section#Contactanos > .contenedor > h2
@@ -277,25 +276,25 @@ section#Contactanos > .contenedor > a, section#Como > .contenedor > span
 
 a#face
 	{
-		background-image: url("../img/contac/face.png");
+		background-image: url("../img/contac/face.svg");
 	}
 
 a#mail
 	{
-		background-image: url("../img/contac/mail.png");
+		background-image: url("../img/contac/mail.svg");
 	}
 
 a#insta
 	{
-		background-image: url("../img/contac/insta.png");
+		background-image: url("../img/contac/insta.svg");
 	}
 
 a#git
 	{
-		background-image: url("../img/contac/git.png");
+		background-image: url("../img/contac/git.svg");
 	}	
 
-a#face:hover, a#mail:hover, a#insta:hover, a#git:hover
+section#Contactanos > .contenedor > a:hover
 	{
 		background-color: rgba(0,0,0,0.3);
 		border-radius: 10px;
@@ -347,11 +346,23 @@ footer > div > p
 				align-self: center;
 			}
 
+		section#Como > .contenedor
+			{
+				grid-template-rows: 40px 90px 90px;
+			}
+
 		section#Contactanos > .contenedor > a, section#Como > .contenedor > span
 			{
 				width: 80px;
 				height: 80px;
 			}
+
+		section#Como > .contenedor > span:hover
+				{
+					opacity: 1;
+					width: 90px;
+					height: 90px;
+				}
 	}
 
 @media screen and (min-width: 800px)
