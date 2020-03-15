@@ -36,6 +36,8 @@ div.slide > p
 div.slide > img
 	{
 		width: 100%;
+		align-self: center;
+		justify-self:center;
 	}
 	
 
@@ -120,6 +122,11 @@ span.select
 		div.image > img
 			{
 				max-width: 900px;
+			}
+
+		div.slide > img
+			{
+				width: 80%;
 			}		
 	}	
 
