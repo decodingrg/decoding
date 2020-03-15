@@ -137,7 +137,7 @@ section#prin > article.logo > img
 section#prin > img
 	{
 		max-width: 350px;
-		margin: 30px auto;
+		margin: 0px auto;
 		display: block;
 	}
 
@@ -420,7 +420,7 @@ footer > div > p
 
 		section#prin > img
 			{
-				max-width: 700px;
+				max-width: 600px;
 				margin: 10px auto;
 			}
 
