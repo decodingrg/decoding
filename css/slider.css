@@ -30,12 +30,12 @@ div.slide > h3
 
 div.slide > p
 	{
-		line-height: 20px;
+
 	}
 
 div.slide > img
 	{
-		width: 100%;
+		width: 80%;
 		align-self: center;
 		justify-self:center;
 	}
@@ -132,6 +132,17 @@ span.select
 
 @media screen and (min-width: 900px)
 	{
+		div.slider
+		{
+			max-width: 900px;
+
+		}
+
+		div.slide > img
+		{
+			width: 45%;
+		}
+
 		div.image
 			{
 				grid-column-start: 1;
