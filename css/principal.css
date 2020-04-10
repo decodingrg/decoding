@@ -88,6 +88,7 @@ nav > section.logo > img
 		font-family: 'Prompt', sans-serif;
 		font-weight: 400;
 		font-size: 25pt;
+		line-height: 35pt;
 		/*Animacion subrayado*/
 		background-image: linear-gradient(currentColor, currentColor);
     	background-position: 50% 100%;
@@ -320,7 +321,8 @@ footer > div > p
 	}
 
 @media screen and (min-width: 600px)
-	{
+	{		
+
 		/*-------------------- SECCIONES --------------------*/
 		section#prin > article.logo	
 			{
@@ -373,6 +375,11 @@ footer > div > p
 @media screen and (min-width: 800px)
 	{
 		
+		.modal-contenido > a
+			{
+				line-height: 15pt;
+			}
+
 		/* --------------------------- BARRA DE NAVEGACION --------------------------- */
 		nav > i.fas.fa-bars
 			{
